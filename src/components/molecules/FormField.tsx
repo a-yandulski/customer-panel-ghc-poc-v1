@@ -2,7 +2,7 @@ import React from 'react';
 import { Input } from '../atoms';
 import type { InputProps } from '../../types';
 
-export interface FormFieldProps extends Omit<InputProps, 'onChange'> {
+export interface FormFieldProps extends Omit<InputProps, 'onChange' | 'onBlur'> {
   name: string;
   onChange: (name: string, value: string) => void;
   onBlur?: (name: string) => void;

@@ -1,4 +1,56 @@
-# React + TypeScript + Vite
+# Customer Panel - React + TypeScript + Vite
+
+This is a customer panel application built with React, TypeScript, and Vite, designed to work both locally and on GitHub Pages.
+
+## Development
+
+To run the application locally:
+
+```bash
+npm install
+npm run dev
+```
+
+## GitHub Pages Deployment
+
+This application is configured to work with GitHub Pages deployment using repository source. The configuration automatically handles the repository path prefix.
+
+### Deploy to GitHub Pages
+
+To deploy your application to GitHub Pages:
+
+```bash
+npm run deploy
+```
+
+This command will:
+
+1. Build the application with the correct base path
+2. Create/update the `gh-pages` branch
+3. Push the built files to the `gh-pages` branch
+
+### GitHub Pages Settings
+
+Make sure your GitHub Pages settings are configured to:
+
+- **Source**: Deploy from a branch
+- **Branch**: `gh-pages` / (root)
+
+### Manual Build
+
+If you want to build without deploying:
+
+```bash
+npm run build
+```
+
+### Configuration
+
+The application uses environment variables to configure the base path:
+
+- `VITE_REPO_NAME`: The repository name (defaults to `customer-panel-ghc-poc-v1`)
+
+## Original Vite Template Information
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 

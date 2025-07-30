@@ -32,8 +32,11 @@ const PublicRoute = ({ children }: { children: React.ReactNode }) => {
 };
 
 function AppContent() {
+  // Get the base path for GitHub Pages deployment
+  const basename = import.meta.env.DEV ? '' : `/${import.meta.env.VITE_REPO_NAME || 'customer-panel-ghc-poc-v1'}`;
+  
   return (
-    <Router>
+    <Router basename={basename}>
       <Routes>
         <Route path="/login" element={
           <PublicRoute>

@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+customer-panel-impl-req-gpt.md
+customer-panel-ui-req-gpt.md
+customer-panel-ux-req-gpt.md
