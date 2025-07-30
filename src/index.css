@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+/* Custom CSS variables for brand colors from UI specifications */
+:root {
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+  --primary-active: #1e40af;
+  --secondary: #38bdf8;
+  --success: #22c55e;
+  --warning: #facc15;
+  --error: #ef4444;
+  --neutral-900: #111827;
+  --neutral-700: #374151;
+  --neutral-400: #9ca3af;
+  --neutral-200: #e5e7eb;
+  --neutral-50: #f9fafb;
+}
+
+/* Font configuration - Inter font family */
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  color: var(--neutral-900);
+  line-height: 1.5;
+}
+
+/* Focus ring for accessibility */
+.focus-ring:focus-visible {
+  outline: 2px solid var(--secondary);
+  outline-offset: 2px;
+}
+
+/* Custom utilities that complement Tailwind */
+.text-neutral-900 {
+  color: var(--neutral-900);
+}
+
+.text-neutral-700 {
+  color: var(--neutral-700);
+}
+
+.text-neutral-400 {
+  color: var(--neutral-400);
+}
+
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.bg-primary-hover:hover {
+  background-color: var(--primary-hover);
+}
+
+.bg-primary-active:active {
+  background-color: var(--primary-active);
+}
+
+.border-secondary {
+  border-color: var(--secondary);
+}
+
+.border-success {
+  border-color: var(--success);
+}
+
+.border-error {
+  border-color: var(--error);
+}
